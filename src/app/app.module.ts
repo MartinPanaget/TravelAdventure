@@ -8,13 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogCreateComponent } from './blog-create/blog-create.component';
+import { StartseiteComponent } from './startseite/startseite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogOverviewComponent,
     BlogDetailComponent,
-    BlogCreateComponent
+    BlogCreateComponent,
+    StartseiteComponent
   ],
   imports: [
     BrowserModule,
