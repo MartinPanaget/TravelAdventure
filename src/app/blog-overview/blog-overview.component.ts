@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Blog } from '../blog';
 
 @Component({
   selector: 'app-blog-overview',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-overview.component.css']
 })
 export class BlogOverviewComponent implements OnInit {
+  blogEntries: Blog[] = [];
 
   constructor() { }
 
