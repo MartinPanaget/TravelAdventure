@@ -11,7 +11,7 @@ export class BlogOverviewService extends Dexie{
 
 
   constructor() {
-    super('BlogDatabase');
+    super('TravelBlogDatabase');
   }
   add(title: string, content: string, author: string): Promise<any> {
     const id = uuidv4();
