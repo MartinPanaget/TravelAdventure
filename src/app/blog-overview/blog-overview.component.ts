@@ -13,6 +13,7 @@ export class BlogOverviewComponent implements OnInit {
   constructor(private blogOverviewService: BlogOverviewService) { }
 
   ngOnInit(): void {
+    this.getAll();
   }
   async getAll() {
     this.blogEntries = await this.blogOverviewService.getAll();
