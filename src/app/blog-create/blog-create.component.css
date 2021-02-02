@@ -1,0 +1,58 @@
+.background {
+  width: 100%;
+  height: 100vh;
+}
+
+.headline-wrapper {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.headline-wrapper h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #13324d;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10 px;
+  text-align: center;
+  line-height: normal;
+}
+
+.headline-wrapper h2 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:  #70bda1;
+  text-align: center;
+  line-height: normal;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-container > * {
+  width: 100%;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  color:  #70bda1 !important;
+ }
+ ::ng-deep .mat-focused .mat-form-field-outline {
+  color:  #70bda1 !important;
+ }
+ ::ng-deep .mat-stroked-button {
+  background-color:  #70bda1 !important;
+  color: white;
+ }
+
+ ::ng-deep .mat-fab {
+  background-color:  #70bda1 !important;
+ }
+
+ ul {
+  margin-top: 10px;
+  position: fixed;
+}

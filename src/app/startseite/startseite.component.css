@@ -66,7 +66,17 @@
   color: #13324d;
 }
 
+.white:hover {
+  background-color:  #13324d;
+  color: #fff;
+}
+
 .green {
+  background-color: rgba(112, 189, 161, 0.6);
+  color: #fff;
+}
+
+.green:hover {
   background-color: #70bda1;
   color: #fff;
 }
