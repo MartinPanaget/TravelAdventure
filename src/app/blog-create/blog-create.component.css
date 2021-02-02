@@ -34,26 +34,30 @@
 .form-container {
   display: flex;
   flex-direction: column;
-
 }
-
 .form-container > * {
   width: 100%;
-
 }
-
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
   color:  #70bda1 !important;
  }
-
  ::ng-deep .mat-focused .mat-form-field-outline {
   /*change color of label*/
   color:  #70bda1 !important;
  }
-
  ::ng-deep .mat-stroked-button {
   /*change color of label*/
   background-color:  #70bda1 !important;
   color: white;
  }
+ .kreis {
+  background-color: #70bda1;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100px;
+  }
