@@ -12,11 +12,16 @@ export class BlogOverviewService extends Dexie{
 
   constructor() {
     super('TravelBlogDatabase');
+
+    this.version(1).stores({
+      blog: 'id'
+    });
   }
   add(title: string, content: string, author: string): Promise<any> {
     const id = uuidv4();
     const date = new Date();
     const createdOn = date.getDate() + "."+ date.getMonth()+ "." + date.getFullYear();
+    //return this.blog.add({ id, title, createdOn});
     return this.blog.add({ id, title, content, author, createdOn});
   }
 
