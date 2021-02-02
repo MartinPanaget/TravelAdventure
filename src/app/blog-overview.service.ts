@@ -21,7 +21,6 @@ export class BlogOverviewService extends Dexie{
     const id = uuidv4();
     const date = new Date();
     const createdOn = date.getDate() + "."+ date.getMonth()+ "." + date.getFullYear();
-    //return this.blog.add({ id, title, createdOn});
     return this.blog.add({ id, title, content, author, createdOn});
   }
 
