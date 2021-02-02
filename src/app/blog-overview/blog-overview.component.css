@@ -24,6 +24,7 @@
   font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #2b626c;
+  cursor: pointer;
 }
 
 .overview-headline h2 {
@@ -31,6 +32,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #70bda1;
+  cursor: pointer;
 }
 
 .overview {
@@ -56,12 +58,14 @@
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .blogContent h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .blogContent p {
@@ -69,10 +73,11 @@
   font-weight: 400;
   font-size: 12px;
   text-align: right;
+  cursor: pointer;
 }
 
 .blogImg {
-  background-image: url(./../img/thailand.jpg);
+  background-image: url(../../assets/img/thailand.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
