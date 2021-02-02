@@ -1,0 +1,103 @@
+.back-wrapper {
+  width: 100%;
+  height: 5vh;
+  background-color: salmon;
+}
+
+.backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-wrapper {
+  z-index: 1;
+}
+
+.overview-headline {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.overview-headline h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #2b626c;
+}
+
+.overview-headline h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #70bda1;
+}
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -5;
+}
+
+.blogBox {
+  background-color: #fdfdfd;
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px 0;
+  box-shadow: 3px 3px 10px 0px rgba(140, 140, 140, 0.75);
+}
+
+.blogContent {
+  padding: 10px;
+}
+
+.blogContent h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.blogContent h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.blogContent p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+}
+
+.blogImg {
+  background-image: url(./../img/thailand.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.add-button {
+  z-index: 10;
+  position: fixed;
+  top: 88vh;
+  right: 2vh;
+}
+
+.addBtn {
+  font-size: 50px;
+  background-color: #70bda1;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.addBtn button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
