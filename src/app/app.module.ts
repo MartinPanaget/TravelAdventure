@@ -13,7 +13,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
-import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { HeaderComponent } from './header/header.component';
     BlogOverviewComponent,
     BlogDetailComponent,
     BlogCreateComponent,
-    StartseiteComponent,
-    HeaderComponent
+    StartseiteComponent
   ],
   imports: [
     BrowserModule,
