@@ -5,8 +5,7 @@
 .detailImg {
   width: 100%;
   height: 40vh;
-  background-color: thistle;
-  background: url(../../assets/img/thailand.jpg);
+  background: url(./../../assets/img/thailand.jpg);
   background-position: center;
   background-size: cover;
 }

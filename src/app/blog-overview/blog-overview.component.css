@@ -77,7 +77,7 @@
 }
 
 .blogImg {
-  background-image: url(../../assets/img/thailand.jpg);
+  background-image: url(./../../assets/img/thailand.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
