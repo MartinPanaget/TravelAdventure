@@ -106,3 +106,7 @@
   background-color: transparent;
   color: white;
 }
+
+ul {
+  list-style: none;
+}

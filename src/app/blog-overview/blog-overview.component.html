@@ -5,49 +5,20 @@
         <h1>Your Travelbook</h1>
         <h2>A journey of a thousand miles must begin with a blog.</h2>
       </div>
-      <div class="overview container" routerLink="../detail">
-        <div class="blogBox row">
-          <div class="blogImg col-5"></div>
-          <div class="blogContent col-7">
-            <h3>Bangkok</h3>
-            <h4>Reiseroute 3 Wochen
-              Backpacking auf der
-              wunderschönen Nord-Süd
-              Route
-            </h4>
-              <p>Lena Viorinho</p>
+      <ul>
+        <li *ngFor="let blog of blogEntries">
+          <div class="overview container" routerLink="../detail">
+            <div class="blogBox row">
+              <div class="blogImg col-5"></div>
+              <div class="blogContent col-7">
+                <h3>{{blog.title}}</h3>
+                <h4>{{ blog.content}}</h4>
+                <p>{{blog.author}}</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="overview container" routerLink="../detail">
-        <div class="blogBox row">
-          <div class="blogImg col-5"></div>
-          <div class="blogContent col-7">
-            <h3>Bangkok</h3>
-            <h4>Reiseroute 3 Wochen
-              Backpacking auf der
-              wunderschönen Nord-Süd
-              Route
-            </h4>
-              <p>Lena Viorinho</p>
-          </div>
-        </div>
-      </div>
-      <div class="overview container" routerLink="../detail">
-        <div class="blogBox row">
-          <div class="blogImg col-5"></div>
-          <div class="blogContent col-7">
-            <h3>Bangkok</h3>
-            <h4>Reiseroute 3 Wochen
-              Backpacking auf der
-              wunderschönen Nord-Süd
-              Route
-            </h4>
-              <p>Lena Viorinho</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        </li>
+      </ul>
     <div class="add-button" routerLink="../erstellen">
       <div class="add-wrapper">
         <div class="addBtn">
