@@ -9,6 +9,8 @@ import { BlogOverviewComponent } from './blog-overview/blog-overview.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogCreateComponent } from './blog-create/blog-create.component';
 import { StartseiteComponent } from './startseite/startseite.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { StartseiteComponent } from './startseite/startseite.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
