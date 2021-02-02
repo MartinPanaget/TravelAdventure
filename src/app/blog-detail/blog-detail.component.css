@@ -1,0 +1,57 @@
+.detail-sektion {
+  width: 100%;
+}
+
+.detailImg {
+  width: 100%;
+  height: 40vh;
+  background-color: thistle;
+  background: url(../../assets/img/thailand.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.detail-headline {
+  margin-top: 25px;
+  padding: 16px;
+}
+
+.detail-headline h1 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #2b626c;
+  cursor: pointer;
+}
+
+.detail-headline h2 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #70bda1;
+  cursor: pointer;
+}
+
+.detail-headline .autor {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+  cursor: pointer;
+}
+
+.detail-headline .data {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.detail-content p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #707070;
+  cursor: pointer;
+}
