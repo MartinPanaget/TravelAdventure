@@ -8,22 +8,22 @@
     <div class="form-container">
       <mat-form-field appearance="outline" hideRequiredMarker>
         <mat-label>Titel</mat-label>
-        <input matInput>
+        <input matInput type="text" #inputTitle>
         <mat-hint>Max. 30 Zeichen</mat-hint>
       </mat-form-field>
       <mat-form-field hideRequiredMarker appearance="outline">
         <mat-label>Untertitel</mat-label>
-        <input matInput>
+        <input matInput type="text" #inputUntertitel>
         <mat-hint>Max. 30 Zeichen</mat-hint>
       </mat-form-field>
       <mat-form-field hideRequiredMarker appearance="outline">
         <mat-label>Autor</mat-label>
         <mat-hint>Nachname, Vorname</mat-hint>
-        <input matInput>
+        <input matInput type="text" #inputName>
       </mat-form-field>
      <mat-form-field hideRequiredMarker appearance="outline">
         <mat-label>Kategorie</mat-label>
-        <mat-select>
+        <mat-select >
           <mat-option value="one">Wandern und Berge</mat-option>
           <mat-option value="two">Sommer, Sonne, Strand</mat-option>
           <mat-option value="three">Stadt</mat-option>
@@ -34,8 +34,9 @@
     </mat-form-field>
     <mat-form-field hideRequiredMarker appearance="outline" >
       <mat-label>Text...</mat-label>
-      <textarea matInput></textarea>
+      <textarea matInput type="text" #inputTextfeld></textarea>
     </mat-form-field>
   </div>
-  <button mat-stroked-button>Eintrag erstellen</button>
+   <button mat-stroked-button (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value)" routerLink="../übersicht">Eintrag erstellen</button>
+  </div>
 </div>
