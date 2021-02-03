@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatIconModule} from '@angular/material/icon';
     BlogOverviewComponent,
     BlogDetailComponent,
     BlogCreateComponent,
-    StartseiteComponent
+    StartseiteComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
