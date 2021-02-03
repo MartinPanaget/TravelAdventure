@@ -89,20 +89,3 @@
   top: 88vh;
   right: 2vh;
 }
-
-.addBtn {
-  font-size: 50px;
-  background-color: #70bda1;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-}
-
-.addBtn button {
-  border: none;
-  background-color: transparent;
-  color: white;
-}
