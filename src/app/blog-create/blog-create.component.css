@@ -7,28 +7,26 @@
   display: block;
   justify-content: center;
   align-items: center;
-  padding-top: 15vh;
+  margin-top: 1.5em;
 }
 
 .headline-wrapper h1 {
   font-size: 40px;
   font-family: "Playfair Display", serif;
   font-weight: 500;
-  color: #13324d;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  margin-bottom: 10 px;
+  color: #2b626c;
+  cursor: pointer;
   text-align: center;
-  line-height: normal;
+
 }
 
 .headline-wrapper h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color:  #70bda1;
+  font-weight: 300;
+  color: #70bda1;
+  cursor: pointer;
   text-align: center;
-  line-height: normal;
 }
 .form-container {
   display: flex;
@@ -47,12 +45,3 @@
   background-color:  #70bda1 !important;
   color: white;
  }
-
- ::ng-deep .mat-fab {
-  background-color:  #70bda1 !important;
- }
-
- ul {
-  margin-top: 10px;
-  position: fixed;
-}
