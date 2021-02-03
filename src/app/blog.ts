@@ -1,7 +1,8 @@
 export class Blog {
   id: string;
   title: string;
-  content: string;
+  subtitle: string;
   author: string;
+  content: string;
   createdOn: string;
 }

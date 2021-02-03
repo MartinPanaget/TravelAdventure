@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog';
 import { BlogOverviewService } from './../blog-overview.service';
-import {ArticleCreateService} from '../article-create.service';
 
 @Component({
   selector: 'app-blog-overview',
@@ -20,8 +19,8 @@ export class BlogOverviewComponent implements OnInit {
     this.blogEntries = await this.blogOverviewService.getAll();
   }
 
-  async add(title: string, content: string, author: string) {
-    await this.blogOverviewService.add(title, content, author);
+  async add(title: string, subtitle: string, content: string,  author: string) {
+    await this.blogOverviewService.add(title, subtitle, content, author);
     this.getAll();
   }
 }
