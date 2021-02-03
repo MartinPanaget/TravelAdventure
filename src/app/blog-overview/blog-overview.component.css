@@ -11,7 +11,7 @@
 }
 
 .overview-wrapper {
-  z-index: 1;
+  padding-top: 10vh;
 }
 
 .overview-headline {
@@ -43,6 +43,7 @@
 }
 
 .blogBox {
+  min-height: 28vh;
   background-color: #fdfdfd;
   width: 100%;
   border-radius: 20px;
