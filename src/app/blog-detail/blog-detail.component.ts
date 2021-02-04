@@ -9,7 +9,7 @@ import { BlogOverviewService } from './../blog-overview.service';
 })
 export class BlogDetailComponent implements OnInit {
   blogEntries: Blog[] = [];
-  index;
+  index: number;
 
   constructor(private blogOverviewService: BlogOverviewService) { }
 
@@ -20,7 +20,7 @@ export class BlogDetailComponent implements OnInit {
 
   getIndex() {
     const urlParams = new URLSearchParams(window.location.search);
-    this.index = urlParams;
+    this.index = parseInt(urlParams.get('index'));
   }
 
   async getAll() {

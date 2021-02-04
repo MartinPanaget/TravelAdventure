@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog';
 import { BlogOverviewService } from './../blog-overview.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-overview',
@@ -10,10 +11,14 @@ import { BlogOverviewService } from './../blog-overview.service';
 export class BlogOverviewComponent implements OnInit {
   blogEntries: Blog[] = [];
 
-  constructor(private blogOverviewService: BlogOverviewService) { }
+  constructor(private blogOverviewService: BlogOverviewService, private router: Router) { }
 
   ngOnInit(): void {
     this.getAll();
+  }
+
+  routeDetailPage(i) {
+    this.router.navigate(['detail'], {queryParams: {index: i}})
   }
 
   async getAll() {

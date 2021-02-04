@@ -7,7 +7,7 @@
         <h2>A journey of a thousand miles must begin with a blog.</h2>
       </div>
       <ul>
-        <li *ngFor="let blog of blogEntries; let i = index" routerLink="../detail" queryParams="{{i}}">
+        <li *ngFor="let blog of blogEntries; let i = index" (click)="routeDetailPage(i)">
           <div class="overview container">
             <div class="blogBox row">
               <div class="blogImg col-5"></div>
