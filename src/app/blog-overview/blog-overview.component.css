@@ -43,7 +43,7 @@
 }
 
 .blogBox {
-  min-height: 28vh;
+  min-height: 24vh;
   background-color: #fdfdfd;
   width: 100%;
   border-radius: 20px;
@@ -52,7 +52,7 @@
 }
 
 .blogContent {
-  padding: 10px;
+  padding: 50px;
 }
 
 .blogContent h3 {
@@ -69,10 +69,20 @@
   cursor: pointer;
 }
 
-.blogContent p {
+.blogContent .autor {
+  font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: #000;
+  text-align: right;
+  cursor: pointer;
+}
+
+.blogContent .data {
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #000;
   text-align: right;
   cursor: pointer;
 }
