@@ -1,56 +1,56 @@
 {
-  "name": "myTravelblog",
-  "short_name": "myTravelblog",
-  "theme_color": "#1976d2",
+  "name": "YourTravelbook",
+  "short_name": "Travelbook",
+  "theme_color": "#70bda1",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/icons/icon-72x72.png",
+      "src": "assets/icons/logo_72_72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-96x96.png",
+      "src": "assets/icons/logo_96_96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-128x128.png",
+      "src": "assets/icons/logo_128_128.pngg",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-144x144.png",
+      "src": "assets/icons/logo_144_144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-152x152.png",
+      "src": "assets/icons/logo_152_152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-192x192.png",
+      "src": "assets/icons/logo_192_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-384x384.png",
+      "src": "assets/icons/logo_384_384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/icon-512x512.png",
+      "src": "assets/icons/ilogo_512_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
