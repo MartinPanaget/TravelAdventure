@@ -1,4 +1,8 @@
-::ng-deep .mat-fab {
+::ng-deep .mat-mini-fab {
+  background-color:  #70bda1 !important;
+ }
+
+ ::ng-deep .mat-fab {
   background-color:  #70bda1 !important;
  }
 
