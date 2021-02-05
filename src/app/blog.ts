@@ -5,4 +5,5 @@ export class Blog {
   author: string;
   content: string;
   createdOn: string;
+  category: any;
 }

@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class BlogOverviewComponent implements OnInit {
   blogEntries: Blog[] = [];
+  images: any;
 
   constructor(private blogOverviewService: BlogOverviewService, private router: Router) { }
 
@@ -25,8 +26,8 @@ export class BlogOverviewComponent implements OnInit {
     this.blogEntries = await this.blogOverviewService.getAll();
   }
 
-  async add(title: string, subtitle: string,  author: string, content: string) {
-    await this.blogOverviewService.add(title, subtitle, author, content);
+  async add(title: string, subtitle: string,  author: string, content: string, category:any) {
+    await this.blogOverviewService.add(title, subtitle, author, content, category);
     this.getAll();
   }
 }

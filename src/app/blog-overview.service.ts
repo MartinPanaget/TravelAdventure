@@ -17,11 +17,11 @@ export class BlogOverviewService extends Dexie{
       blog: 'id'
     });
   }
-  add(title: string, subtitle: string, author: string, content: string): Promise<any> {
+  add(title: string, subtitle: string, author: string, content: string, category:any): Promise<any> {
     const id = uuidv4();
     const date = new Date();
     const createdOn = date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear();
-    return this.blog.add({ id, title, subtitle, author, content, createdOn});
+    return this.blog.add({ id, title, subtitle, author, content, createdOn, category});
   }
 
   getAll(): Promise<Blog[]> {
