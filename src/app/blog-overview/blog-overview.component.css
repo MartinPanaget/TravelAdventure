@@ -52,7 +52,19 @@
 }
 
 .blogContent {
-  padding: 50px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .blogContent {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blogContent {
+    padding: 50px;
+  }
 }
 
 .blogContent h3 {
@@ -120,4 +132,5 @@
 
 ul {
   list-style: none;
+  padding: 0;
 }
