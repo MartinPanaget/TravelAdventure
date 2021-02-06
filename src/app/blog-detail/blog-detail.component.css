@@ -2,14 +2,6 @@
   width: 100%;
 }
 
-.detailImg {
-  width: 100%;
-  height: 40vh;
-  background: url(./../../assets/img/thailand.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
 .detail-headline {
   margin-top: 25px;
   padding: 15px;
@@ -53,4 +45,9 @@
   font-weight: 400;
   color: #707070;
   cursor: pointer;
+}
+.bild {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
 }
