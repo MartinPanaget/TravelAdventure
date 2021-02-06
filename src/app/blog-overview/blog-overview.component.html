@@ -11,20 +11,27 @@
           <div class="overview container">
             <div class="blogBox row">
               <div class="blogImg col-5">
-                <img class="bild" src="./../../assets/category-images/berge.jpg">
-<!--millis try start-->
-             <!-- <div *ngFor="let category of blogEntries"
-              [ngSwitch]="category">
+            <div
+              [ngSwitch]="blog.category">
                 <div *ngSwitchCase="'Wandern und Berge'">
                  <img class="bild" src="./../../assets/category-images/berge.jpg">
                 </div>
-                <div *ngSwitchDefault>
+                <div *ngSwitchCase="'Sommer, Sonne, Strand'">
                   <img class="bild" src="./../../assets/category-images/strand.jpg">
                  </div>
-              </div>-->
-<!--millis try end-->
-<!--Jules try start-->
-<!--Jules try end-->
+                 <div *ngSwitchCase="'Stadt'">
+                  <img class="bild" src="./../../assets/category-images/stadt.jpg">
+                 </div>
+                 <div *ngSwitchCase="'Farm'">
+                  <img class="bild" src="./../../assets/category-images/farm.jpg">
+                 </div>
+                 <div *ngSwitchCase="'Party'">
+                  <img class="bild" src="./../../assets/category-images/party.jpg">
+                 </div>
+                 <div *ngSwitchDefault>
+                  <img class="bild" src="./../../assets/img/thailand.jpg">
+                 </div>
+              </div>
               </div>
 
               <div class="blogContent col-7">
@@ -32,6 +39,7 @@
                 <h4>{{ blog.subtitle}}</h4>
                 <p class="autor">Autor: {{blog.author}}</p>
                 <p class="data">Erstellt am {{blog.createdOn}}</p>
+                <p class="data">Kategorie: {{blog.category}}</p>
               </div>
             </div>
           </div>
