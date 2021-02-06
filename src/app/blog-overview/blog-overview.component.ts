@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class BlogOverviewComponent implements OnInit {
   blogEntries: Blog[] = [];
-  images: any;
 
   constructor(private blogOverviewService: BlogOverviewService, private router: Router) { }
 
