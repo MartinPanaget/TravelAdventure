@@ -8,6 +8,8 @@ import {ArticleCreateService} from '../article-create.service';
   templateUrl: './blog-create.component.html',
   styleUrls: ['./blog-create.component.css']
 })
+
+
 export class BlogCreateComponent implements OnInit {
   blogEntries: Blog[] = [];
 
@@ -26,4 +28,5 @@ export class BlogCreateComponent implements OnInit {
     await this.blogOverviewService.add(title, subtitle, author, content, category);
     this.getAll();
   }
+
 }
