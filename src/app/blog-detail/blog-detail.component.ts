@@ -11,6 +11,7 @@ export class BlogDetailComponent implements OnInit {
   blogEntries: Blog[] = [];
   index: number;
 
+
   constructor(private blogOverviewService: BlogOverviewService) { }
 
   ngOnInit(): void {
