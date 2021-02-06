@@ -1,7 +1,27 @@
 <app-header></app-header>
 <div class="detail-sektion">
   <div>
-    <img class="bild" src="./../../assets/category-images/berge.jpg">
+    <div
+    [ngSwitch]="blogEntries[index].category">
+      <div *ngSwitchCase="'Wandern und Berge'">
+       <img class="bild" src="./../../assets/category-images/berge.jpg">
+      </div>
+      <div *ngSwitchCase="'Sommer, Sonne, Strand'">
+        <img class="bild" src="./../../assets/category-images/strand.jpg">
+       </div>
+       <div *ngSwitchCase="'Stadt'">
+        <img class="bild" src="./../../assets/category-images/stadt.jpg">
+       </div>
+       <div *ngSwitchCase="'Farm'">
+        <img class="bild" src="./../../assets/category-images/farm.jpg">
+       </div>
+       <div *ngSwitchCase="'Party'">
+        <img class="bild" src="./../../assets/category-images/party.jpg">
+       </div>
+       <div *ngSwitchDefault>
+        <img class="bild" src="./../../assets/img/thailand.jpg">
+       </div>
+    </div>
   </div>
     <div class="container detail-headline">
       <h1>{{blogEntries[index].title}}</h1>
