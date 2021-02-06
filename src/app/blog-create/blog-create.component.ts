@@ -11,15 +11,9 @@ import {ArticleCreateService} from '../article-create.service';
 
 
 export class BlogCreateComponent implements OnInit {
+  selectedValue = '';
   blogEntries: Blog[] = [];
 
-  category: any[] = [
-    { name: 'Wandern und Berge' },
-    { name: 'Sommer, Sonne, Strand' },
-    { name: 'Stadt' },
-    { name: 'Farm' },
-    { name: 'Party' },
-];
 
   constructor(private blogOverviewService: BlogOverviewService, private articleCreateService: ArticleCreateService) {}
 

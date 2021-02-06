@@ -21,34 +21,23 @@
         <mat-hint>Nachname, Vorname</mat-hint>
         <input matInput type="text" #inputName>
       </mat-form-field>
-
-      <!--milli start-->
     <mat-form-field hideRequiredMarker appearance="outline">
       <mat-label>Kategorie</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let category of category" [value]="category.name">
-          {{category.name}}
-        </mat-option>
+      <mat-select [(value)]='selectedValue'>
+        <mat-option value="Wandern und Berge">Wandern und Berge</mat-option>
+        <mat-option value="Sommer, Sonne, Strand">Sommer, Sonne, Strand</mat-option>
+        <mat-option value="Stadt">Stadt</mat-option>
+        <mat-option value="Farm">Farm</mat-option>
+        <mat-option value="Party">Party</mat-option>
       </mat-select>
       <mat-hint>Wähle eine Kategorie</mat-hint>
-    </mat-form-field>
-    <!--milli start-->
-   <!--<mat-form-field hideRequiredMarker appearance="outline">
-        <mat-label #matselect>Kategorie</mat-label>
-        <mat-select>
-          <mat-option value="one">Wandern und Berge</mat-option>
-          <mat-option value="two">Sommer, Sonne, Strand</mat-option>
-          <mat-option value="three">Stadt</mat-option>
-          <mat-option value="for">Farm</mat-option>
-          <mat-option value="five">Party</mat-option>
-        </mat-select>
-        <mat-hint>Wähle eine Kategorie</mat-hint>
-    </mat-form-field>-->
+  </mat-form-field>
+  <!--<p>You selected: {{selectedValue}}</p>-->
     <mat-form-field hideRequiredMarker appearance="outline" >
       <mat-label>Text...</mat-label>
       <textarea matInput type="text" #inputTextfeld></textarea>
     </mat-form-field>
   </div>
-   <button mat-stroked-button (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, category)" routerLink="../übersicht">Eintrag erstellen</button>
+   <button mat-stroked-button (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, selectedValue)" routerLink="../übersicht">Eintrag erstellen</button>
   </div>
 </div>
