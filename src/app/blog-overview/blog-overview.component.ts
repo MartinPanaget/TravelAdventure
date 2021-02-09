@@ -24,9 +24,4 @@ export class BlogOverviewComponent implements OnInit {
   async getAll() {
     this.blogEntries = await this.blogOverviewService.getAll();
   }
-
-  async add(title: string, subtitle: string,  author: string, content: string, category:any) {
-    await this.blogOverviewService.add(title, subtitle, author, content, category);
-    this.getAll();
-  }
 }
