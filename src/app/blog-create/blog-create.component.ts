@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog';
 import { BlogOverviewService } from '../blog-overview.service';
-import {ArticleCreateService} from '../article-create.service';
 
 @Component({
   selector: 'app-blog-create',
@@ -15,7 +14,7 @@ export class BlogCreateComponent implements OnInit {
   blogEntries: Blog[] = [];
 
 
-  constructor(private blogOverviewService: BlogOverviewService, private articleCreateService: ArticleCreateService) {}
+  constructor(private blogOverviewService: BlogOverviewService) {}
 
   ngOnInit(): void {
     this.getAll();
