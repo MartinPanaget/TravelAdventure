@@ -6,22 +6,22 @@
       <h2 class="subHeadline">Fill out this form to share a new travel story</h2>
     </div>
     <div class="form-container">
-      <mat-form-field appearance="outline" hideRequiredMarker>
+      <mat-form-field appearance="outline">
         <mat-label>Titel</mat-label>
         <input matInput type="text" #inputTitle>
         <mat-hint>Max. 30 Zeichen</mat-hint>
       </mat-form-field>
-      <mat-form-field hideRequiredMarker appearance="outline">
+      <mat-form-field appearance="outline">
         <mat-label>Untertitel</mat-label>
         <input matInput type="text" #inputUntertitel>
         <mat-hint>Max. 30 Zeichen</mat-hint>
       </mat-form-field>
-      <mat-form-field hideRequiredMarker appearance="outline">
+      <mat-form-field appearance="outline">
         <mat-label>Autor</mat-label>
         <mat-hint>Nachname, Vorname</mat-hint>
         <input matInput type="text" #inputName>
       </mat-form-field>
-    <mat-form-field hideRequiredMarker appearance="outline">
+    <mat-form-field appearance="outline">
       <mat-label>Kategorie</mat-label>
       <mat-select [(value)]='selectedValue'>
         <mat-option value="Wandern und Berge">Wandern und Berge</mat-option>
@@ -33,7 +33,7 @@
       <mat-hint>Wähle eine Kategorie</mat-hint>
   </mat-form-field>
   <!--<p>You selected: {{selectedValue}}</p>-->
-    <mat-form-field hideRequiredMarker appearance="outline" >
+    <mat-form-field appearance="outline" >
       <mat-label>Text...</mat-label>
       <textarea matInput type="text" #inputTextfeld></textarea>
     </mat-form-field>
