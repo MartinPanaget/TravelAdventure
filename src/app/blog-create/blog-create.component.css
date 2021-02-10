@@ -33,10 +33,14 @@
 .form-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .form-container > * {
   width: 100%;
 }
+::ng-deep .mat-form-field {
+  margin-bottom: 0.5em;
+ }
 ::ng-deep .mat-focused .mat-form-field-label {
   color:  #70bda1 !important;
  }
@@ -45,6 +49,7 @@
  }
  input[type=submit] {
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
   padding:10px 30px;
 	width:auto;
 	background:#70bda1;

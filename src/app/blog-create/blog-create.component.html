@@ -8,13 +8,13 @@
     <div class="form-container">
       <mat-form-field appearance="outline">
         <mat-label>Titel</mat-label>
-        <input matInput type="text" #inputTitle required>
-        <mat-hint>Max. 30 Zeichen</mat-hint>
+        <input matInput #input  type="text" maxlength="30" #inputTitle required>
+        <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Untertitel</mat-label>
-        <input matInput type="text" #inputUntertitel required>
-        <mat-hint>Max. 30 Zeichen</mat-hint>
+        <input matInput #input  type="text" maxlength="30" #inputUntertitel required>
+        <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Autor</mat-label>
