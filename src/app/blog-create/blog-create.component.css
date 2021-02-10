@@ -43,7 +43,21 @@
  ::ng-deep .mat-focused .mat-form-field-outline {
   color:  #70bda1 !important;
  }
- ::ng-deep .mat-stroked-button {
-  background-color:  #70bda1 !important;
-  color: white;
- }
+ input[type=submit] {
+  font-size: 18px;
+  padding:10px 30px;
+	width:auto;
+	background:#70bda1;
+  border: none;
+	border-radius: 20px;
+	color:white;
+	cursor:pointer;
+}
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+}
