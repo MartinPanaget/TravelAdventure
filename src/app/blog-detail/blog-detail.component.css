@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.detailTextblock{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .detail-headline {
   margin-top: 25px;
   padding: 15px;
@@ -16,7 +21,7 @@
 }
 
 .detail-headline h2 {
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #70bda1;
@@ -24,15 +29,16 @@
 }
 
 .detail-headline .autor {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #000;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .detail-headline .data {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #000;
@@ -40,11 +46,12 @@
 }
 
 .detail-content p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #707070;
   cursor: pointer;
+  line-height: 160%;
 }
 .bild {
   width: 100%;

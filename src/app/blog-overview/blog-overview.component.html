@@ -14,22 +14,22 @@
             <div
               [ngSwitch]="blog.category">
                 <div *ngSwitchCase="'Wandern und Berge'">
-                 <img class="bild" src="./../../assets/category-images/berge.jpg">
+                 <img class="bild" src="../../../assets/category-images/berge.jpg">
                 </div>
                 <div *ngSwitchCase="'Sommer, Sonne, Strand'">
-                  <img class="bild" src="./../../assets/category-images/strand.jpg">
+                  <img class="bild" src="../../../assets/category-images/strand.jpg">
                  </div>
                  <div *ngSwitchCase="'Stadt'">
-                  <img class="bild" src="./../../assets/category-images/stadt.jpg">
+                  <img class="bild" src="../../../assets/category-images/stadt.jpg">
                  </div>
                  <div *ngSwitchCase="'Farm'">
-                  <img class="bild" src="./../../assets/category-images/farm.jpg">
+                  <img class="bild" src="../../../assets/category-images/farm.jpg">
                  </div>
                  <div *ngSwitchCase="'Party'">
-                  <img class="bild" src="./../../assets/category-images/party.jpg">
+                  <img class="bild" src="../../../assets/category-images/party.jpg">
                  </div>
                  <div *ngSwitchDefault>
-                  <img class="bild" src="./../../assets/img/thailand.jpg">
+                  <img class="bild" src="../../../assets/img/thailand.jpg">
                  </div>
               </div>
               </div>
@@ -37,8 +37,10 @@
               <div class="blogContent col-7">
                 <h3>{{blog.title}}</h3>
                 <h4>{{ blog.subtitle}}</h4>
-                <p class="autor">Autor: {{blog.author}}</p>
+                <div class="blogContentMetaData">
+                <p class="autor">AutorIn: {{blog.author}}</p>
                 <p class="data">Erstellt am {{blog.createdOn}}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -51,3 +53,4 @@
     </div>
   </div>
 </div>
+
