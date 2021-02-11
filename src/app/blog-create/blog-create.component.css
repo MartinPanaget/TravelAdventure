@@ -1,4 +1,5 @@
 .background {
+  display: flex;
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
@@ -9,7 +10,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 1.5em;
-  margin-bottom: 10%;
+  margin-bottom: 50px;
 }
 
 .headline-wrapper h1 {
@@ -33,14 +34,20 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .form-container > * {
   width: 100%;
 }
 ::ng-deep .mat-form-field {
-  margin-bottom: 0.5em;
+  margin-bottom: 10px;
+  font-size: 16px;
  }
+
+.mat-hint{
+  font-size: 14px;
+}
 ::ng-deep .mat-focused .mat-form-field-label {
   color:  #70bda1 !important;
  }
@@ -65,4 +72,9 @@ input[type=submit]:hover {
 
 input[type="submit"]:active {
 	opacity:0.4;
+}
+
+.submitBtn{
+  display: block;
+  margin: 0 auto;
 }

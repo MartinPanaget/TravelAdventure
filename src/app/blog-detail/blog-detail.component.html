@@ -4,29 +4,30 @@
     <div
     [ngSwitch]="blogEntries[index].category">
       <div *ngSwitchCase="'Wandern und Berge'">
-       <img class="bild" src="./../../assets/category-images/berge.jpg">
+       <img class="bild" src="../../../assets/category-images/berge.jpg">
       </div>
       <div *ngSwitchCase="'Sommer, Sonne, Strand'">
-        <img class="bild" src="./../../assets/category-images/strand.jpg">
+        <img class="bild" src="../../../assets/category-images/strand.jpg">
        </div>
        <div *ngSwitchCase="'Stadt'">
-        <img class="bild" src="./../../assets/category-images/stadt.jpg">
+        <img class="bild" src="../../../assets/category-images/stadt.jpg">
        </div>
        <div *ngSwitchCase="'Farm'">
-        <img class="bild" src="./../../assets/category-images/farm.jpg">
+        <img class="bild" src="../../../assets/category-images/farm.jpg">
        </div>
        <div *ngSwitchCase="'Party'">
-        <img class="bild" src="./../../assets/category-images/party.jpg">
+        <img class="bild" src="../../../assets/category-images/party.jpg">
        </div>
        <div *ngSwitchDefault>
-        <img class="bild" src="./../../assets/img/thailand.jpg">
+        <img class="bild" src="../../../assets/img/thailand.jpg">
        </div>
     </div>
   </div>
+  <div class="detailTextblock">
     <div class="container detail-headline">
       <h1>{{blogEntries[index].title}}</h1>
       <h2>{{blogEntries[index].subtitle}}</h2>
-      <p class="autor">Autor: {{blogEntries[index].author}}</p>
+      <p class="autor">AutorIn: {{blogEntries[index].author}}</p>
       <p class="data">Erstellt am {{blogEntries[index].createdOn}}</p>
     </div>
     <div class=" container detail-content">
@@ -34,4 +35,5 @@
           {{blogEntries[index].content}}
       </p>
     </div>
+  </div>
 </div>

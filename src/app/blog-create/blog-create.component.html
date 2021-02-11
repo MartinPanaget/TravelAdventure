@@ -17,7 +17,7 @@
         <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
-        <mat-label>Autor</mat-label>
+        <mat-label>AutorIn</mat-label>
         <mat-hint>Nachname, Vorname</mat-hint>
         <input matInput type="text" #inputName required>
       </mat-form-field>
@@ -32,11 +32,11 @@
       </mat-select>
       <mat-hint>Wähle eine Kategorie</mat-hint>
   </mat-form-field>
-    <mat-form-field appearance="outline" >
+    <mat-form-field appearance="outline">
       <mat-label>Text...</mat-label>
       <textarea matInput type="text" #inputTextfeld required></textarea>
     </mat-form-field>
   </div>
-   <input type="submit" name="submit" value="Eintrag erstellen" (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, selectedValue)" routerLink="../übersicht"/>
-  </div>
+   <input class="submitBtn" type="submit" name="submit" value="Eintrag erstellen" (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, selectedValue)" routerLink="../übersicht"/>
+    </div>
 </div>
