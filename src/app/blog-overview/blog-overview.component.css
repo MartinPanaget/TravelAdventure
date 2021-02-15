@@ -55,33 +55,6 @@
   padding: 15px;
 }
 
-@media (min-width: 768px) {
-  .blogContent {
-    padding: 25px;
-  }
-
-  .mat-fab{
-    width: 80px;
-    height: 80px;
-  }
-
-  .material-icons{
-    font-size: 46px;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 992px) {
-  .blogContent {
-    padding: 50px;
-  }
-
-  .mat-fab{
-    right: 50px;
-  }
-}
-
 .blogContent h3 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
