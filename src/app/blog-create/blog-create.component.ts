@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Blog } from '../blog';
 import { BlogOverviewService } from '../blog-overview.service';
 import {ArticleCreateService} from '../article-create.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-blog-create',
@@ -13,6 +14,7 @@ import {ArticleCreateService} from '../article-create.service';
 export class BlogCreateComponent implements OnInit {
   selectedValue = '';
   blogEntries: Blog[] = [];
+  titletext = new FormControl('', [Validators.required]);
 
 
   constructor(private blogOverviewService: BlogOverviewService, private articleCreateService: ArticleCreateService) {}
@@ -28,6 +30,11 @@ export class BlogCreateComponent implements OnInit {
   async add(title: string, subtitle: string, author: string, content: string, category:any) {
     await this.blogOverviewService.add(title, subtitle, author, content, category);
     this.getAll();
+  }
+
+  getErrorMessage() {
+    return this.titletext.hasError('required') ? 'Du musst einen Titel eingeben' :
+            '';
   }
 
 }

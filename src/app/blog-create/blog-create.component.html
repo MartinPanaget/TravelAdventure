@@ -6,24 +6,29 @@
       <h2 class="subHeadline">Fill out this form to share a new travel story</h2>
     </div>
     <div class="form-container">
+
+
+
+
       <mat-form-field appearance="outline">
         <mat-label>Titel</mat-label>
-        <input matInput #input  type="text" maxlength="30" #inputTitle required>
+        <input matInput #input  type="text" maxlength="30" #inputTitle [formControl]="titletext" required>
+        <mat-error *ngIf="titletext.invalid">{{getErrorMessage()}}</mat-error>
         <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Untertitel</mat-label>
-        <input matInput #input  type="text" maxlength="30" #inputUntertitel required>
+        <input matInput #input  type="text" maxlength="30" #inputUntertitel >
         <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>AutorIn</mat-label>
         <mat-hint>Nachname, Vorname</mat-hint>
-        <input matInput type="text" #inputName required>
+        <input matInput type="text" #inputName>
       </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Kategorie</mat-label>
-      <mat-select [(value)]='selectedValue' required>
+      <mat-select [(value)]='selectedValue'>
         <mat-option value="Wandern und Berge">Wandern und Berge</mat-option>
         <mat-option value="Sommer, Sonne, Strand">Sommer, Sonne, Strand</mat-option>
         <mat-option value="Stadt">Stadt</mat-option>
@@ -34,9 +39,9 @@
   </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Text...</mat-label>
-      <textarea matInput type="text" #inputTextfeld required></textarea>
+      <textarea matInput type="text" #inputTextfeld></textarea>
     </mat-form-field>
   </div>
-   <input class="submitBtn" type="submit" name="submit" value="Eintrag erstellen" (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, selectedValue)" routerLink="../übersicht"/>
+   <input class="submitBtn" type="submit" [disabled]="titletext.invalid" name="submit" value="Eintrag erstellen" (click)="add(inputTitle.value, inputUntertitel.value, inputName.value, inputTextfeld.value, selectedValue)" routerLink="../übersicht"/>
     </div>
 </div>
