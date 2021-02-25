@@ -13,9 +13,7 @@
           "/*.css",
           "/*.js",
           "src/assets/**",
-          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)",
-          "/assets/category-images/*",
-          "/*.jpg"
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
       }
     }
