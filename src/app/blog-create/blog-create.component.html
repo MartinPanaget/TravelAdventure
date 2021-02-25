@@ -8,14 +8,14 @@
     <div class="form-container">
       <mat-form-field appearance="outline">
         <mat-label>Titel</mat-label>
-        <input matInput #input  type="text" maxlength="30" #inputTitle [formControl]="titletext" required>
+        <input matInput #input  type="text" maxlength="70" #inputTitle [formControl]="titletext" required>
         <mat-error *ngIf="titletext.invalid">{{getErrorMessage()}}</mat-error>
-        <mat-hint>{{input.value?.length || 0}}/30</mat-hint>
+        <mat-hint>{{input.value?.length || 0}}/70</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Untertitel</mat-label>
-        <input matInput #inputsub  type="text" maxlength="30" #inputUntertitel >
-        <mat-hint>{{inputsub.value?.length || 0}}/30</mat-hint>
+        <input matInput #inputsub  type="text" maxlength="70" #inputUntertitel >
+        <mat-hint>{{inputsub.value?.length || 0}}/70</mat-hint>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>AutorIn</mat-label>
